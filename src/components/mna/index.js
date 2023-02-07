@@ -93,7 +93,7 @@ export default function Mna() {
         form.append('user_id', userId['id']);
 
         try {
-            const response = await axios.post('http://localhost:8000/api/mna', form);
+            const response = await axios.post('https://awxp7lrqygragwzi62oykz3rh40cqgml.lambda-url.us-west-2.on.aws/api/mna', form);
             window.location.reload()
         } catch (error) {
             console.error(error);

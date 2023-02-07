@@ -60,7 +60,7 @@ export default function Example() {
 
   useEffect(() => {
     async function fetchData() {
-      const result = await axios.get('http://localhost:8000/api/mna?paginate=true&paginate_per_page=20');
+      const result = await axios.get('https://awxp7lrqygragwzi62oykz3rh40cqgml.lambda-url.us-west-2.on.aws/api/mna?paginate=true&paginate_per_page=20');
       setPatients(result.data.data);
       setTotalPatients(result.data.data.length);
     }
